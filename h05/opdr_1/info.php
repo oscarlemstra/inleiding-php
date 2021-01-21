@@ -6,7 +6,7 @@
     foreach ($_POST as $item => $value) {
         if ($value == "") {
             echo "Je bent je ".$item." vergeten in te vullen,"."<br>";
-            echo "ga <a href='index.html'>terug<a>.";
+            echo "ga <a href='index.php'>terug<a>.";
             break;
         } else {
             $aantalIngevuld++;
