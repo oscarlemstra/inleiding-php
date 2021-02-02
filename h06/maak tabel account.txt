@@ -1,0 +1,12 @@
+USE school2;
+
+CREATE TABLE account (
+	email_adres varchar(80),
+	wachtwoord varchar(80)
+) engine = innodb;
+
+
+INSERT INTO account (email_adres, wachtwoord) VALUES
+("piet@worldonline.nl", "doetje123"),
+("klaas@carpets.nl", "snoepje777"),
+("truushendriks@wegweg.nl", "arkiearkie201");

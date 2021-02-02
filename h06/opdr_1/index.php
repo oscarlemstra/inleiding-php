@@ -1,9 +1,11 @@
 <?php
+    //u91058p86256_
+
     $host = "localhost";
     $port = "3306";
-    $user = "schooluser";
+    $user = "u91058p86256_schooluser";
     $pass = "school";
-    $db = "school2";
+    $db = "u91058p86256_school2";
     $query = "SELECT * from cursist";
 
 
