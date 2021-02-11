@@ -1,0 +1,14 @@
+USE u91058p86256_school2;
+
+CREATE TABLE account_h7 (
+	gebruiker varchar(80),
+	wachtwoord varchar(80),
+	rol varchar(80)
+) engine = innodb;
+
+
+INSERT INTO account_h7 (gebruiker, wachtwoord, rol) VALUES
+("piet", "1234", "administrator"),
+("klaas", "7777", "gebruiker"),
+("oscar", "2040", "administrator"),
+("truus", "2012", "gebruiker");
