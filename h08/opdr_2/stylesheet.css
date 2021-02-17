@@ -1,0 +1,32 @@
+/* style */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#center-site {
+    width: 820px;
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 5px;
+
+    text-decoration: none;
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
+    color: #ff8400;
+}
