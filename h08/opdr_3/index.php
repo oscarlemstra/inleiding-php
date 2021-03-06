@@ -40,7 +40,6 @@
                     include_once 'autoLijst.php';
 
 
-                    print_r($_POST); //debuggen
                     $autoOverzicht = new AutoOverzicht();
 
                     //maakt objecten van de auto lijst

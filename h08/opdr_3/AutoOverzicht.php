@@ -16,37 +16,29 @@ class AutoOverzicht {
         $gefilterdeLijst = [];
 
         foreach ($this->autoos as $auto) {
-            if ($auto->getMerk() == $merk && $auto->getPrijs() >= $minPrijs && $auto->getPrijs() <= $maxPrijs) {
+            if ($merk == "alle-auto's" && $minPrijs == "" && $maxPrijs == "") {
                 $gefilterdeLijst[] = $auto;
-                echo "error 1"."<br>";
-            }
-            else if ($auto->getMerk() == $merk && $auto->getPrijs() >= $minPrijs && $maxPrijs == "") {
-                $gefilterdeLijst[] = $auto;
-                echo "error 2"."<br>";
-            }
-            else if ($auto->getMerk() == $merk && $minPrijs == "" && $auto->getPrijs() <= $maxPrijs) {
-                $gefilterdeLijst[] = $auto;
-                echo "error 3"."<br>";
-            }
-            else if ($auto->getMerk() == $merk && $minPrijs == "" && $maxPrijs == "") {
-                $gefilterdeLijst[] = $auto;
-                echo "error 4"."<br>";
-            }
-            else if ($merk == "alle-auto's" || $merk == "" && $minPrijs == "" && $maxPrijs == "") {
-                $gefilterdeLijst[] = $auto;
-                echo "error 5"."<br>";
             }
             else if ($merk == "alle-auto's" && $auto->getPrijs() >= $minPrijs && $maxPrijs == "") {
                 $gefilterdeLijst[] = $auto;
-                echo "error 6"."<br>";
             }
             else if ($merk == "alle-auto's" && $minPrijs == "" && $auto->getPrijs() <= $maxPrijs) {
                 $gefilterdeLijst[] = $auto;
-                echo "error 7"."<br>";
             }
             else if ($merk == "alle-auto's" && $auto->getPrijs() >= $minPrijs && $auto->getPrijs() <= $maxPrijs) {
                 $gefilterdeLijst[] = $auto;
-                echo "error 8"."<br>";
+            }
+            else if ($auto->getMerk() == $merk && $auto->getPrijs() >= $minPrijs && $auto->getPrijs() <= $maxPrijs) {
+                $gefilterdeLijst[] = $auto;
+            }
+            else if ($auto->getMerk() == $merk && $auto->getPrijs() >= $minPrijs && $maxPrijs == "") {
+                $gefilterdeLijst[] = $auto;
+            }
+            else if ($auto->getMerk() == $merk && $minPrijs == "" && $auto->getPrijs() <= $maxPrijs) {
+                $gefilterdeLijst[] = $auto;
+            }
+            else if ($auto->getMerk() == $merk && $minPrijs == "" && $maxPrijs == "") {
+                $gefilterdeLijst[] = $auto;
             }
         }
 
