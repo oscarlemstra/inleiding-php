@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: sandybrown;
+    margin: 0;
+}
+
+
+header {
+    background-image: url("img/baguette.jpg");
+    background-size: cover;
+    height: 100px;
+}
+
+header h1 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding: 25px;
+    padding-left: 100px;
+}
+
+
+div#center-site {
+    background-color: white;
+    width: 85%;
+    margin: auto;
+}
+
+a.button {
+    background-color: white;
+    text-decoration: none;
+    font-size: 14px;
+    color: royalblue;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+}
+
+a.button:hover {
+    background-color: lightgray;
+    color: midnightblue;
+}
+
+div#intro h2 {
+    font-weight: normal;
+    font-size: 36px;
+    color: #404040;
+    margin-bottom: 0;
+}
+div#intro p {
+    font-size: 22px;
+    color: #404040;
+    margin-top: 10px;
+}
