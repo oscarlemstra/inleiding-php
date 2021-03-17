@@ -15,7 +15,7 @@
             <div id="intro">
                 <div id="buttons">
                     <a class="button" href="index.php">Broodjes overzicht</a>
-                    <a class="button" href="">Broodje toevoegen</a>
+                    <a class="button" href="form.php">Broodje toevoegen</a>
                 </div>
 
                 <h2>Broodjes overzicht</h2>
