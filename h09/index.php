@@ -23,7 +23,12 @@
             </div>
 
             <div id="brood-overzicht">
-                <p>hier komt het overzicht</p>
+                <?php
+                    include_once 'Database.php';
+
+                    $database = new Database();
+                    $database->getTableBrood();
+                ?>
             </div>
         </div>
     </body>

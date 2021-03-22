@@ -5,15 +5,15 @@ class Brood {
     private $naam = "";
     private $meel = "";
     private $gewicht = 0;
-    private $vorm;
+    private $img_url = "";
 
 
-    public function __construct ($id, $naam, $meel, $gewicht, $vorm) {
+    public function __construct ($id, $naam, $meel, $gewicht, $img_url) {
         $this->id = $id;
         $this->naam = $naam;
         $this->meel = $meel;
         $this->gewicht = $gewicht;
-        $this->vorm = $vorm;
+        $this->img_url = $img_url;
     }
 
 
@@ -34,7 +34,7 @@ class Brood {
         return $this->gewicht;
     }
 
-    public function getVorm () {
-        return $this->vorm;
+    public function getImg_url () {
+        return $this->img_url;
     }
 }

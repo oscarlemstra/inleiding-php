@@ -17,7 +17,7 @@
                 <a class="button" href="form.php">Broodje toevoegen</a>
             </div>
 
-            <form action="" method="post">
+            <form action="" method="post" enctype="multipart/form-data">
                 <label for="naam">Naam van brood:</label>
                 <input type="text" id="naam" name="naam" required>
 
@@ -27,8 +27,8 @@
                 <label for="gewicht">Gewicht in gram:</label>
                 <input type="number" id="gewicht" name="gewicht" required>
 
-                <label for="vorm">Vorm van brood:</label>
-                <input type="text" id="vorm" name="vorm" required>
+                <label for="afbeelding">Vorm van brood:</label>
+                <input type="file" id="afbeelding" name="afbeelding" required>
 
                 <input type="submit" id="knop" value="Toevoegen">
             </form>
