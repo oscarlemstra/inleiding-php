@@ -21,16 +21,19 @@
                 <label for="naam">Naam van brood:</label>
                 <input type="text" id="naam" name="naam" required>
 
-                <label for="meel-type">Meel type:</label>
-                <input type="text" id="meel-type" name="meel-type" required>
+                <label for="meel">Meel type:</label>
+                <input type="text" id="meel" name="meel" required>
 
                 <label for="gewicht">Gewicht in gram:</label>
                 <input type="number" id="gewicht" name="gewicht" required>
 
-                <label for="afbeelding">Vorm van brood:</label>
+                <label for="afbeelding">Afbeelding van brood:</label>
                 <input type="file" id="afbeelding" name="afbeelding" required>
 
-                <input type="submit" id="knop" value="Toevoegen">
+                <input type="submit" id="knop" name="knop" value="Toevoegen">
+
+                <!-- regelt de upload van de afbeelding en de ander gegevens -->
+                <?php require_once 'upload.php'?>
             </form>
         </div>
     </body>

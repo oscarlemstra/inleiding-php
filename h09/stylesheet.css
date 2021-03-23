@@ -4,7 +4,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: sandybrown;
+    background-color: darkgoldenrod;
     margin: 0;
 }
 
@@ -87,4 +87,26 @@ div#intro p {
     font-size: 22px;
     color: #404040;
     margin-top: 10px;
+}
+
+
+div.broodje {
+    display: inline-block;
+    border: solid sandybrown 2px;
+    border-radius: 15px;
+
+    width: 260px;
+    padding: 10px;
+    margin: 5px;
+}
+
+div.broodje img {
+    border-bottom: solid sandybrown 1px;
+    width: 100%;
+}
+
+
+p#file-error {
+    color: red;
+    font-size: 15px;
 }

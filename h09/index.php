@@ -24,10 +24,29 @@
 
             <div id="brood-overzicht">
                 <?php
-                    include_once 'Database.php';
+                    require_once 'Database.php';
+                    require_once 'Overzicht.php';
+                    require_once 'Brood.php';
 
                     $database = new Database();
-                    $database->getTableBrood();
+                    $overzicht = new Overzicht();
+
+
+                    //bakt de broodjes en zet ze in de overzicht
+                    foreach ($database->getTableBrood() as $row) {
+                        $broodje = new Brood($row['id'], $row['naam'], $row['meel'], $row['gewicht'], $row['img_url']);
+                        $overzicht->voegBroodjeToe($broodje);
+                    }
+
+                    //maakt html elementen van overzicht
+                    foreach ($overzicht->getOverzicht() as $broodje) {
+                        echo "<div class='broodje'>";
+                        echo "<img src='".$broodje->getImg_url()."' alt='brood'>";
+                        echo "<p>Naam: ".$broodje->getNaam()."</p>";
+                        echo "<p>Meel: ".$broodje->getMeel()."</p>";
+                        echo "<p>Gewicht: ".$broodje->getGewicht()." g</p>";
+                        echo "</div>";
+                    }
                 ?>
             </div>
         </div>

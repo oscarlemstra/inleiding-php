@@ -11,19 +11,33 @@ class Database {
 
 
     public function getTableBrood () {
+        $broodLijst = array();
+
         try {
             $dbh = new PDO('mysql:host='.$this->host.';dbname='.$this->db.';port='.$this->port, $this->user, $this->pass);
 
-            echo "<pre>";
             foreach($dbh->query('SELECT * from brood') as $row) {
-                echo $row['naam'] . '<br>';
+                $broodLijst[] = $row;
             }
-            echo "</pre>";
-
             $dbh = null;
         }
         catch (PDOException $e) {
-            print "Error!: " . $e->getMessage() . "<br/>";
+            print "Error!: ".$e->getMessage()."<br/>";
+            die();
+        }
+        return $broodLijst;
+    }
+
+
+    public function insertIntoTableBrood ($naam, $meel, $gewicht, $img_url) {
+        $query = "INSERT INTO brood (naam, meel, gewicht, img_url) VALUES ('$naam', '$meel', $gewicht, '$img_url')";
+
+        try {
+            $dbh = new PDO('mysql:host='.$this->host.';dbname='.$this->db.';port='.$this->port, $this->user, $this->pass);
+            $dbh->query($query);
+        }
+        catch (PDOException $e) {
+            print "Error!: ".$e->getMessage()."<br/>";
             die();
         }
     }
