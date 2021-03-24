@@ -1,5 +1,5 @@
 -- database: bakkerij wim vlecht
-
+-- bakkerijWimVlecht
 CREATE DATABASE bakkerij_wim_vlecht;
 
 USE bakkerij_wim_vlecht;

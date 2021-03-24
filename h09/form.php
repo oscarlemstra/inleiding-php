@@ -33,7 +33,7 @@
                 <input type="submit" id="knop" name="knop" value="Toevoegen">
 
                 <!-- regelt de upload van de afbeelding en de ander gegevens -->
-                <?php require_once 'upload.php'?>
+                <?php require_once 'upload.php'; upload(); ?>
             </form>
         </div>
     </body>

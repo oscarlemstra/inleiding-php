@@ -45,6 +45,7 @@
                         echo "<p>Naam: ".$broodje->getNaam()."</p>";
                         echo "<p>Meel: ".$broodje->getMeel()."</p>";
                         echo "<p>Gewicht: ".$broodje->getGewicht()." g</p>";
+                        echo "<a href='edit_form.php?id=".$broodje->getId()."'><img class='edit' src='img/edit_icon.png' alt='edit'></a>";
                         echo "</div>";
                     }
                 ?>
